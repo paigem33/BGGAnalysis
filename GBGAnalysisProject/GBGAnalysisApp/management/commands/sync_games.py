@@ -16,6 +16,7 @@ class Command(BaseCommand):
                         row[key] = None
 
                 GameBoard.objects.create(
+                    id=row['id'], 
                     name=row['name'],
                     year_published=row['yearpublished'],
                     rank=row['rank'],
