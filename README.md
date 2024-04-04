@@ -1,0 +1,1 @@
+To populate your local GameBoard table (the list of all board games from the GBG csv) run the migrations and then run the following command: `python manage.py sync_games`. This will take a while to run, but then you will be able to see all the rows in your database via the admin section. 
