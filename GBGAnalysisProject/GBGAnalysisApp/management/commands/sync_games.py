@@ -1,7 +1,7 @@
 import os
 import csv
 from django.core.management.base import BaseCommand
-from GBGAnalysisApp.models import GameBoard  # Import your Game model
+from GBGAnalysisApp.models import GameBoard 
 
 class Command(BaseCommand):
     help = 'Import data from a CSV file and create GameBoard models'

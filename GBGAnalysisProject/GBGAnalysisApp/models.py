@@ -21,3 +21,11 @@ class GameBoard(models.Model):
 
     def __str__(self):
         return self.name
+    
+class Review(models.Model):
+    id = models.AutoField(primary_key=True)
+    gameboard = models.ForeignKey(GameBoard, on_delete=models.CASCADE)
+    username = models.CharField(max_length=255)
+    country = models.CharField(max_length=255, default=None, blank=True, null=True)
+    rating = models.FloatField(default=None, blank=True, null=True)
+    review_text = models.TextField(default=None, blank=True, null=True)
