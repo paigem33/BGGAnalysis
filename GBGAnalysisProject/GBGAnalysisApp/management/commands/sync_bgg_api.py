@@ -22,6 +22,7 @@ class Command(BaseCommand):
         if xml_data.status_code != 200:
             self.stdout.write(self.style.ERROR(xml_data.status_code))
         df = pd.read_xml(xml_data.content)
+        # print(df.iloc[0]['boardgamemechanic'])
         for i in range(len(df)):
             row = df.iloc[i]
             GameBoard.objects.filter(id=row['objectid']).update(
@@ -31,7 +32,8 @@ class Command(BaseCommand):
                 max_playtime=row['maxplaytime'],
                 age=row['age'],
                 description=row['description'],
-                publisher=row['boardgamepublisher']
+                publisher=row['boardgamepublisher'],
+                category=row['boardgamecategory']
             )
         return current
     
