@@ -29,3 +29,4 @@ class Review(models.Model):
     country = models.CharField(max_length=255, default=None, blank=True, null=True)
     rating = models.FloatField(default=None, blank=True, null=True)
     review_text = models.TextField(default=None, blank=True, null=True)
+    
