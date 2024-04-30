@@ -1,3 +1,5 @@
+# For the Django application:
+
 To populate your local GameBoard table (the list of all board games from the BGG csv) run the migrations and then run the following command: `python manage.py sync_games`. This will take a while to run, but then you will be able to see all the rows in your database via the admin section. 
 
 After that, you are able to run `python mangage.py sync_reviews` to populate your reviews database. This will take several hours. 
