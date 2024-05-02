@@ -19,3 +19,5 @@ Note: since this code takes so long to run, we recommend referring to the presen
 These scripts require the `bgg-19m-reviews.csv` file from this kaggle dataset: https://www.kaggle.com/datasets/jvanelteren/boardgamegeek-reviews?select=bgg-19m-reviews.csv
 as well as `users.csv` file from this kaggle dataset: https://www.kaggle.com/datasets/thedevastator/board-game-ratings-by-country
 and the list of games, `boardgame_ranks.csv`, from https://boardgamegeek.com/wiki/page/BGG_XML_API2#toc1
+
+The files are very large, and thus we opted to have them downloaded directly from kaggle.
